@@ -1,0 +1,23 @@
+<!-- Copyright (c) 2018-2021 Ben Siebert. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Clicker</title>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="bg-secondary" style="user-select: none">
+    <div class="top-0 start-0 position-absolute">
+        <p style="font-size: 4vw">Cookies: <span id="display"></span></p>
+        <p style="font-size: 4vw">CPS: <span id="cps">0</span>/<span id="max-cps">0</span> </p>
+        <p style="font-size: 4vw">Grandmas: <span id="grandmas">0</span></p>
+        <button class="btn btn-primary" onclick="buyGrandma()" style="font-size: 2vw">Buy Grandma<span id="grandma-prize">(100)</span></button>
+    </div>
+    <div class="top-50 start-50 translate-middle position-absolute">
+        <img width="512" height="512" src="img/cookie.png" id="image" style="cursor:pointer; user-select: text" onclick="addCookie()" draggable="false">
+    </div>
+</body>
+</html>

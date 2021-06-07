@@ -1,0 +1,22 @@
+/**
+ * @author Ben Siebert
+ * @copyright 2018-2021 Ben Siebert. All rights reserved.
+ */
+
+.fadeUp {
+    animation-name: fadeUp;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeUp {
+    0% {
+        padding-top: 0;
+    }
+    50% {
+        padding-top: 100px;
+    }
+    100% {
+        padding-top: 0;
+    }
+}
